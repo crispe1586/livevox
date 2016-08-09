@@ -1,0 +1,419 @@
+/*Fonts
+@font-face
+  font-family: 'Montserrat-Bold'
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#svgFontName") format("svg")
+
+
+@font-face
+  font-family: 'Montserrat-Light'
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#svgFontName") format("svg")
+
+
+@font-face
+  font-family: 'OpenSans-Light'
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.svg#svgFontName") format("svg")
+
+
+/*********************************************************************************************
+/*DESKTOP/TABLET STYLES
+/*********************************************************************************************
+@media only screen and (min-width: 480px)
+  html
+    height: 100%
+  body
+    height: 100%
+    padding: 0
+    margin: 0
+    height: 100%
+    &.active
+      overflow: hidden
+  a
+    text-decoration: none
+  ul
+    padding: 0
+    list-style-type: none
+  /*Header
+  header
+    background: url('../img/img_header.png')
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    border-bottom: 5px solid #154688
+    color: #ffffff
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 45px
+    /*padding:30px 45px;
+    width: 100%
+    min-width: 320px
+    h1
+      font-family: Montserrat-Bold
+      font-size: 72px
+    p
+      font-family: OpenSans-Light
+      font-size: 24px
+      line-height: 120%
+      border-top: 2px solid #fff
+      padding-top: 30px
+      padding-bottom: 30px
+  .btn
+    content: ""
+    height: 93px
+    max-width: 335px
+    font-family: Montserrat-Bold
+    font-size: 30px
+    color: #ffffff
+    margin-bottom: 20px
+    border: none
+  header
+    .btn:hover
+      color: #fff
+    .buttonswrap
+      margin: 40px 0
+    .btn-learn
+      background-color: rgba(0, 0, 0, 0.3)
+      border: 4px solid #000
+      box-sizing: border-box
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+      padding: 0 42px
+      margin-right: 10px
+    .btn-demo
+      background-color: rgba(21, 70, 136, 0.3)
+  /*button header
+  .topbuttonbox
+    position: relative
+    top: 52px
+    div
+      width: 200px
+    .btn-solid
+      height: 40px
+      width: 190px
+      font-family: Montserrat-Bold
+      font-size: 17px
+      color: #ffffff
+      margin-bottom: 5px
+      padding: 5px 0
+      border: none
+      background: #154688
+      float: left
+  /*Content
+  .container
+    width: 100%
+    margin: 0 auto
+    padding: 0
+  .content
+    height: 100%
+  /*Sponsors section
+  #sponsors
+    text-align: center
+    background-color: #fcfcfc
+    padding: 30px 0
+    width: 100%
+    img
+      max-width: 860px
+      width: 100%
+  /*Footer
+  footer
+    width: 100%
+    text-align: center
+    background-color: #ffffff
+    margin-top: 45px
+    margin-bottom: 45px
+    float: left
+    #copyright
+      font-family: Montserrat-Light
+      font-size: 12px
+      color: #bcbcbc
+  /*Mobile bar
+  .mobile-bar
+    display: none
+  /*navigation
+  .navbar
+    margin-bottom: 0
+  .nav
+    display: none
+  /*Header logo
+  .logo
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    margin-top: -20px
+    img
+      min-width: 226px
+  .primary-nav
+    font-family: Montserrat-Light
+    font-size: 12px
+    background-color: #ffffff
+    color: #bcbcbc
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    margin: 0 auto
+    padding-bottom: 30px
+    padding-top: 30px
+    > li
+      padding-top: 15px
+      padding-bottom: 15px
+      padding-left: 20px
+      padding-right: 20px
+      white-space: nowrap
+      cursor: hand
+      /*menu overflow to next line
+      display: inline-block
+      > a
+        color: #bcbcbc
+        text-transform: uppercase
+        text-decoration: none
+      &:hover > a
+        border-bottom: 3px solid #5497f8
+        text-decoration: none
+    li.active
+      background-color: #5497f8
+      > a
+        color: #fff
+  .primary-item
+    position: relative
+  .secondary-nav
+    background-color: rgba(255, 255, 255, 0.9)
+    max-height: 0
+    z-index: 20
+    overflow-y: hidden
+    position: absolute
+    top: 48px
+    left: 0
+    -webkit-transition: max-height 0.3s ease-in-out
+    transition: max-height 0.3s ease-in-out
+    &.active
+      max-height: 600px
+      min-width: 300px
+      padding: 20px
+      border-bottom: 5px solid #5497f8
+    a
+      color: #5497f8
+      text-decoration: none
+      font-family: Montserrat-Light
+      font-size: 12px
+      line-height: 40px
+      text-transform: uppercase
+    li:hover > a
+      color: #bcbcbc
+
+/*********************************************************************************************
+/*MOBILE STYLES
+/*********************************************************************************************
+@media only screen and (max-width: 480px)
+  html
+    height: 100%
+  body
+    height: 100%
+    padding: 0
+    margin: 0
+    &.active
+      overflow: hidden
+  *
+    &::after, &::before
+      box-sizing: content-box
+  /*header
+  header
+    background: url('../img/img_header.png')
+    background-repeat: no-repeat
+    background-position: top left
+    background-size: auto 100%
+    border-bottom: 5px solid #154688
+    color: #ffffff
+    padding: 30px 45px
+    min-width: 320px
+    h1
+      font-family: Montserrat-Bold
+      font-size: 44px
+      letter-spacing: -2px
+    p
+      font-family: OpenSans-Light
+      font-size: 24px
+      line-height: 120%
+      margin: 40px 0
+    .btn
+      content: ""
+      height: 93px
+      width: 100%
+      font-family: Montserrat-Bold
+      font-size: 30px
+      color: #ffffff
+      margin-bottom: 20px
+      border: none
+      &:hover
+        color: #fff
+    .btn-learn
+      background-color: rgba(0, 0, 0, 0.3)
+      border: 4px solid #000
+      box-sizing: border-box
+      -moz-box-sizing: border-box
+      -webkit-box-sizing: border-box
+    .btn-demo
+      background: #154688 none repeat scroll 0 0.3
+      background-color: rgba(21, 70, 136, 0.3)
+  /*Sponsors Section
+  #sponsors
+    display: none
+  /*Footer
+  footer
+    width: 100%
+    text-align: center
+    background-color: #ffffff
+    margin-top: 45px
+    margin-bottom: 45px
+    float: left
+    #copyright
+      font-family: Montserrat-Light
+      font-size: 12px
+      color: #bcbcbc
+  /*Mobile Bar
+  .mobile-bar
+    background-color: #154688
+    height: 60px
+    width: 100%
+    position: absolute
+    z-index: 50
+    > img
+      height: 70%
+      position: absolute
+      top: 5px
+      /*centering the image
+      display: block
+      left: 0
+      right: 0
+      margin: auto
+  .hamburger
+    background: transparent
+    height: 20px
+    left: 24px
+    top: 20px
+    position: relative
+    -webkit-transition: left 0.3s ease-in
+    transition: left 0.3s ease-in
+    width: 24px
+    &:before, &:after
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+      background: white
+      content: ""
+      height: 4px
+      -webkit-transition: 0.47s
+      transition: 0.47s
+      width: 100%
+    &:before
+      box-shadow: white 0 8px 0 0
+      position: absolute
+    &:after
+      position: absolute
+      top: 16px
+  /*Content
+  .container
+    padding-left: 0
+    padding-right: 0
+    height: 100%
+  .content
+    padding-top: 60px
+    overflow-x: hidden
+    -webkit-transition: left 0.3s ease-in
+    transition: left 0.3s ease-in
+  /*Navigation
+  .navbar
+    z-index: 50
+    background-color: #ffffff
+    color: #000000
+    height: 100%
+    position: absolute
+    padding-top: 100px
+    width: calc(100% - 0px)
+    left: calc(0px - 100%)
+    -webkit-transition: left 0.3s ease-in
+    transition: left 0.3s ease-in
+    margin-bottom: 0
+    ul
+      list-style: none
+    &.active
+      left: 0
+      overflow: auto
+      -webkit-transition: left 0.3s ease-in
+      transition: left 0.3s ease-in
+    a
+      color: #154688
+      padding-left: 20px
+      text-decoration: none
+  /*Primary Navigation
+  .primary-nav
+    font-family: Montserrat-Bold
+    font-size: 24px
+    padding-left: 20px
+    text-transform: uppercase
+    > li
+      padding: 10px 0
+      a
+        &:hover
+          color: #bcbcbc
+        &.active:hover
+          color: #154688
+  .primary-item > a
+    &.chevron::before
+      border-style: solid
+      margin-left: -15px
+      border-width: 0.25em 0.25em 0 0
+      color: #5497f8
+      content: ''
+      display: inline-block
+      height: 10px
+      left: calc(100% - 45px)
+      position: relative
+      top: 5px
+      vertical-align: top
+      width: 10px
+      -webkit-transform: rotate(135deg)
+      -ms-transform: rotate(135deg)
+      transform: rotate(135deg)
+      -webkit-transition: -webkit-transform 0.3s ease
+      transition: transform 0.3s ease
+    &.active::before
+      -webkit-transform: rotate(-45deg)
+      -ms-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      -webkit-transition: -webkit-transform 0.3s ease
+      transition: transform 0.3s ease
+  /*Secondary navigation
+  .secondary-nav
+    font-family: Montserrat-Light
+    font-size: 18px
+    line-height: 35px
+    max-height: 0
+    overflow-y: hidden
+    padding-left: 20px
+    -webkit-transition: max-height 0.3s ease-in-out
+    transition: max-height 0.3s ease-in-out
+    li > a
+      color: #5497f8
+      &:hover
+        color: #5497f8
+    &.active
+      max-height: 560px
+  /*Responsive
+  .logo
+    display: none
+  #toggle.active
+    left: calc(100% - 45px)
+    &:before
+      box-shadow: transparent 0 0 0 0
+      top: 8px
+      -webkit-transform: rotate(585deg)
+      -ms-transform: rotate(585deg)
+      transform: rotate(585deg)
+    &:after
+      top: 8px
+      -webkit-transform: rotate(675deg)
+      -ms-transform: rotate(675deg)
+      transform: rotate(675deg)
+  .search, .topbuttonbox
+    display: none
