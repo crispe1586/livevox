@@ -46,7 +46,9 @@
         //primary item
         li.classList.add('primary-item');
         li.appendChild(buildList(item.items));
-      } 
+      }else{
+	li.classList.add('home-item'); 
+	} 
       ul.appendChild(li);
     });
 

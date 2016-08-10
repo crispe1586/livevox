@@ -78,9 +78,9 @@
     background-color: rgba(21, 70, 136, 0.3); }
   /*button header */
   .topbuttonbox {
-    padding: 20px 0 30px 20px !important;
+    padding: 0 8px !important;
     position: relative;
-    top: 55px; }
+    top: 50px; }
     .topbuttonbox .btn-solid {
       height: 40px;
       width: 100%;
@@ -149,12 +149,13 @@
     align-items: center;
     margin: 0 auto;
     padding-bottom: 30px;
-    padding-top: 30px; }
+    padding-top: 10px;
+    max-width: 1300px; }
     .primary-nav > li {
       padding-top: 15px;
       padding-bottom: 15px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 8px;
+      padding-right: 8px;
       white-space: nowrap;
       cursor: hand;
       /*menu overflow to next line */
@@ -170,8 +171,15 @@
       background-color: #5497f8; }
       .primary-nav li.active > a {
         color: #fff; }
+  .home-item {
+    position: relative;
+    top: 14px; }
   .primary-item {
-    position: relative; }
+    position: relative;
+    top: 14px; }
+  .search {
+    position: relative;
+    top: 14px; }
   .secondary-nav {
     background-color: rgba(255, 255, 255, 0.9);
     max-height: 0;
