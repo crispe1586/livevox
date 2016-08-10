@@ -78,7 +78,9 @@
     background-color: rgba(21, 70, 136, 0.3); }
   /*button header */
   .topbuttonbox {
-    padding: 0 !important; }
+    padding: 20px 0 30px 20px !important;
+    position: relative;
+    top: 55px; }
     .topbuttonbox .btn-solid {
       height: 40px;
       width: 100%;
