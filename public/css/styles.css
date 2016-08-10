@@ -78,13 +78,10 @@
     background-color: rgba(21, 70, 136, 0.3); }
   /*button header */
   .topbuttonbox {
-    position: relative;
-    top: 52px; }
-    .topbuttonbox div {
-      width: 200px; }
+    padding: 0 !important; }
     .topbuttonbox .btn-solid {
       height: 40px;
-      width: 190px;
+      width: 100%;
       font-family: Montserrat-Bold;
       font-size: 17px;
       color: #ffffff;

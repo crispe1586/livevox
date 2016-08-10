@@ -71,27 +71,10 @@
 
   // Add li with button to top navigation 
   var addButtonItem = function(list) {
-    var li = document.createElement('li');
-    var div = document.createElement('div');
-    var button = document.createElement('input');
-    var span = document.createElement('span');
-
-    button.setAttribute('type','button');
-    button.setAttribute('value','REQUEST A DEMO');
-    button.classList.add('btn');
-    button.classList.add('btn-demo');
-    button.classList.add('pull-right');
-    button.classList.add('btn-solid');                
-
-    span.innerHTML = 'Product Inquiries: <strong>(866) 723-9067</strong>';
-    span.classList.add('pull-right');
-
-    li.classList.add('topbuttonbox');
-
-    div.appendChild(button);
-    div.appendChild(span);
-    li.appendChild(div);
-    list.appendChild(li);
+	var li = document.createElement('li');
+    	li.innerHTML='<table><tbody><tr><td><input type="button" value="REQUEST A DEMO" class="btn btn-solid"></td></tr><tr><td><span>Product Inquiries: <strong>(866) 723-9067</strong></span></td></tr></tbody></table>';
+    	li.classList.add('topbuttonbox');
+    	list.appendChild(li);
   };
 
   // Build Navigation
